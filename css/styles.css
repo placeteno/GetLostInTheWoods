@@ -1,4 +1,57 @@
+body {
+    margin: 0;
+}
 h1 {
     font-family: Montserrat;
     font-weight: 300;
+}
+
+.slideshow {
+    margin: 100px;
+}
+.cards-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cards {
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(64, 64, 240);
+    margin: 3px;
+    border-radius: 10px;
+}
+
+.menu-cap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-cap {
+    width: 120px;
+    border: 2px solid #fff;
+    margin: 3px;
+}
+
+
+.signup-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: aqua;
+    width: 80%;
+
+}
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(20, 83, 119);
+}
+footer p {
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin: 0;
 }
