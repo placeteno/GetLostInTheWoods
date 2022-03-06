@@ -6,15 +6,16 @@ body {
 }
 h1 {
     font-family: Montserrat;
-    font-weight: 300;
-    font-size: 55px;
+    font-weight: 600;
+    font-size: 70px;
     margin-bottom: 0;
 }
 
 header {
     background-color: rgb(38, 70, 83);
     color: rgb(233, 196, 106);
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
+    padding: 0 10px 80px 10px;
 }
 .header-container {
     display: flex;
@@ -46,28 +47,54 @@ li > a:hover {
 .get-lost {
     width: 100%;
     margin-top: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .lost-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+
+}
+.lost {
+    width: 70vh;
+}
+.lost > p {
+    margin-top: 3px;
+    font-size: 30px;
+    font-family: roboto;
+}
+.lost a {
+    display: inline-block;
+    padding: 10px 30px 10px 30px;
+    border-radius: 6px;
+    background-color: #F4A261;
+    color: rgb(38, 70, 83);
+    text-decoration: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 20px;
+}
+.lost a:hover {
+    background-color: #d38c52;
+    transition: .2s;
+}
+.lion {
+    width: 60vh;
 }
 .lion img {
     max-width: 100%;
     height: auto;
 }
-.lost > p {
-    margin-top: 3px;
-}
+
 
 
 .slideshow h2 {
     text-align: center;
     font-family: Montserrat;
 }
+h2 {}
 .slideshow {
     padding: 0 50px 0 50px;
 }
@@ -84,7 +111,7 @@ li > a:hover {
 .content {
     width: 120px;
     height: 120px;
-    border: 2px solid rgb(64, 64, 240);
+    border: 2px solid #2A9D8F;
     border-radius: 10px;
 
 }
@@ -106,7 +133,7 @@ li > a:hover {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background-color: aqua;
+    background-color: #F4A261;
     max-width: 1140px;
 
 }
