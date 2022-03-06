@@ -1,26 +1,91 @@
+*{
+    box-sizing: border-box;
+} 
 body {
     margin: 0;
 }
 h1 {
     font-family: Montserrat;
     font-weight: 300;
+    font-size: 55px;
+    margin-bottom: 0;
 }
 
+header {
+    background-color: rgb(38, 70, 83);
+    color: rgb(233, 196, 106);
+    padding-bottom: 80px;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav {
+    padding-right: 30px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li > a {
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 18px;
+    color: rgb(233, 196, 106);
+}
+li > a:hover {
+    background-color: rgb(233, 196, 106);
+    color: rgb(38, 70, 83);
+}
+
+.get-lost {
+    width: 100%;
+    margin-top: 70px;
+}
+.lost-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.lion img {
+    max-width: 100%;
+    height: auto;
+}
+.lost > p {
+    margin-top: 3px;
+}
+
+
+.slideshow h2 {
+    text-align: center;
+    font-family: Montserrat;
+}
 .slideshow {
-    margin: 100px;
+    padding: 0 50px 0 50px;
 }
 .cards-menu {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    gap: 32px;
 }
 .cards {
+    max-width: 125px;
+}
+.content {
     width: 120px;
     height: 120px;
     border: 2px solid rgb(64, 64, 240);
-    margin: 3px;
     border-radius: 10px;
+
 }
 
 .menu-cap {
@@ -28,11 +93,11 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
 }
-.card-cap {
+/* .card-cap {
     width: 120px;
     border: 2px solid #fff;
     margin: 3px;
-}
+} */
 
 
 .signup-card {
@@ -41,13 +106,13 @@ h1 {
     justify-content: center;
     margin: 0 auto;
     background-color: aqua;
-    width: 80%;
+    max-width: 1140px;
 
 }
 
 footer {
     margin-top: 100px;
-    background-color: rgb(20, 83, 119);
+    background-color: rgb(38, 70, 83);
 }
 footer p {
     color: white;
