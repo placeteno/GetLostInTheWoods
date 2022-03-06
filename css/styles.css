@@ -40,6 +40,7 @@ li > a {
 li > a:hover {
     background-color: rgb(233, 196, 106);
     color: rgb(38, 70, 83);
+    transition: .3s;
 }
 
 .get-lost {
