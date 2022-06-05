@@ -1,88 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Lost in the Woods</title>
-    <meta name="description" content="The ultimate guide to the best trails, natural areas, and state parks around and in Milwaukee!"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;200;400;500;600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <meta
+      name="description"
+      content="The ultimate guide to the best trails, natural areas, and state parks around and in Milwaukee!"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;200;400;500;600;800&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-</head>
-<body>
+    <script src="/js/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="backdrop"></div>
     <!-- ==== HEADER ==== -->
-    <header>
-        <div class="header-container">
-        <figure>
-            <img src="#" alt="Company Logo">
-        </figure>
-        <nav>
-            <ul>
-                <li class="places"><a href="#">State Parks</a></li>
-                <li class="places"><a href="#">Trails</a></li>
-                <li class="places"><a href="#">Nature Areas</a></li>
-            </ul>
+    <header id="header">
+      <div class="main-header">
+        <div class="company-logo">
+          <img
+            id="header-img"
+            src="/img/main-logo-icon.svg"
+            alt="Company Logo"
+          />
+          <h1 class="company-logo-title">
+            Get Lost in <br />
+            the Woods
+          </h1>
+        </div>
+        <!-- MAIN NAV -->
+        <button class="toggle-button" type="button">
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+          <span class="toggle-button__bar"></span>
+        </button>
+        <nav id="nav-bar" class="desktop-nav">
+          <ul class="desktop-nav__items">
+            <li class="desktop-nav__item">
+              <a class="nav-link" href="#hero-section">State Parks</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a class="nav-link" href="#parks-info">Trails</a>
+            </li>
+            <li class="desktop-nav__item">
+              <a class="nav-link" href="#cta-section">Nature Areas</a>
+            </li>
+          </ul>
         </nav>
-        </div>
-        <div class="get-lost">
-            <div class="lost-container">
-                <div class="lost">
-                    <h1>Get Lost in the Woods</h1>
-                    <p>Placeholder text with the description</p>
-                    <a href="#">Sign up</a>
-                </div>
-                <div class="lion">
-                    <img src="https://treasuresofoz.org/media/djcatalog2/images/item/0/lion-s-den-gorge.1_f.jpg" alt="Photo of Lion's Den Nature Preserve">
-                </div>
-            </div>
-        </div>
+      </div>
     </header>
-
+    <aside class="mobile-nav-container">
+      <div class="mobile-nav-flex">
+        <nav id="nav-bar" class="mobile-nav">
+          <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+              <a class="nav-link" href="#hero-section">State Parks</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="nav-link" href="#parks-info">Trails</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="nav-link" href="#cta-section">Nature Areas</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="company-logo">
+          <img
+            id="header-img"
+            src="/img/main-logo-icon.svg"
+            alt="Company Logo"
+          />
+          <h1 class="company-logo-title">
+            Get Lost in <br />
+            the Woods
+          </h1>
+        </div>
+      </div>
+    </aside>
     <!-- ==== MAIN CONTENT ==== -->
     <main>
-        <section class="slideshow">
-            <h2>Some random information</h2>
-            <div class="cards-menu">
-                <div class="cards">
-                    <div class="content"></div>
-                    <p>text with description 1</p>
-                </div>
-                <div class="cards">
-                    <div class="content"></div>
-                    <p>text with description 1</p>
-                </div>
-                <div class="cards">
-                    <div class="content"></div>
-                    <p>text with description 1</p>
-                </div>
-                <div class="cards">
-                    <div class="content"></div>
-                    <p>text with description 1</p>
-                </div>
-            </div>
+      <section id="hero-section" class="hero-section">
+        <div class="hero-container">
+          <article class="hero-featured">
+            <h1 class="hero-featured__title">
+              Lion's Den Gorge Nature Preserve
+            </h1>
+            <p class="hero-featured__description">
+              Lion's Den Gorge is a gorgeous nature preserve featuring a variety
+              of unique nature scenes in Mequon, WI.
+            </p>
+            <button type="button" class="hero-btn">More info</button>
+          </article>
+          <div class="hero-featured__img">
+            <a href="#">
+              <img
+                src="https://treasuresofoz.org/media/djcatalog2/images/item/0/lion-s-den-gorge.1_f.jpg"
+                alt="High bluff on a sunny day on Lake Michigan"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
 
-        </section>
-        <section class="quote">
+      <section class="quotes-section">
+        <p>big quote</p>
+      </section>
 
-        </section>
-        <section class="bottom-card">
-            <div class="signup-card">
-                <div class="footer-text">
-                    <h3>Call to action!</h3>
-                    <p>Sign up for updates from our website</p>
-                </div>
-                <div>
-                    <button class="footer-button">Sign up</button>
-                </div>
-            </div>
-        </section>
+      <section id="parks-info" class="parks-info">
+        <h2 class="parks-info-title">Some random information</h2>
+        <ul class="parks-info-cards">
+          <li class="parks-info-card">
+            <div class="card-img"></div>
+            <p>text with description 1</p>
+          </li>
+          <li class="parks-info-card">
+            <div class="card-img"></div>
+            <p>text with description 1</p>
+          </li>
+          <li class="parks-info-card">
+            <div class="card-img"></div>
+            <p>text with description 1</p>
+          </li>
+          <li class="parks-info-car">
+            <div class="card-img"></div>
+            <p>text with description 1</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="cta-section" class="cta-section">
+        <article class="cta-info">
+          <h3>Call to action!</h3>
+          <p>Sign up for updates from our website</p>
+        </article>
+        <div class="cta-button-section">
+          <button class="cta-btn">Sign up</button>
+        </div>
+      </section>
     </main>
 
     <!-- ==== FOOTER ==== -->
     <footer>
-        <p>some random text</p>
+      <p>some random text</p>
     </footer>
-</body>
+  </body>
 </html>
