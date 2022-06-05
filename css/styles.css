@@ -3,6 +3,7 @@
     --secondary-font: 'Roboto', Arial, Helvetica, sans-serif;
     --font-color: #303030;
     --title-color: rgb(38, 70, 83);
+    --title-color-contrast: rgb(213, 226, 231);
 
     --main-color: rgb(38, 70, 83);
     --secondary-color: rgb(233, 196, 106);
@@ -15,12 +16,13 @@
 }
 
 html {
-    scroll-padding-top: 6rem;
+    scroll-padding-top: 7rem;
 
 }
 
 body {
     margin: 0;
+    /* background-color: var(--title-color-contrast); */
 }
 
 .backdrop {
@@ -165,7 +167,7 @@ header {
     color: var(--font-color);
 }
 
-.hero-btn {
+.btn {
     cursor: pointer;
     margin: 1.3rem;
     padding: 10px 30px;
@@ -226,7 +228,7 @@ header {
 /* === PARKS INFO === */
 
 .parks-info {
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 
@@ -277,7 +279,7 @@ header {
 /* === VIDEO SECTION === */
 
 .video-section {
-    height: 30rem;
+    /* height: 30rem; */
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -310,6 +312,15 @@ iframe {
 
 }
 
+.video-section-info {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: rgb(213, 226, 231);
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
 .signup-card {
     display: flex;
     align-items: center;
@@ -317,19 +328,89 @@ iframe {
     margin: 0 auto;
     background-color: #F4A261;
     max-width: 1140px;
-
 }
+
+/* === VIDEO SECTION === */
+.cta-section {
+    margin: 0;
+    background-color: var(--main-color);
+    color: var(--title-color-contrast);
+}
+
+.cta-title {
+    margin: 0 1rem;
+    padding-top: 2.5rem;
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+
+.cta-form {
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+}
+
+.cta-form label,
+.cta-form input {
+    display: block;
+    font-family: var(--secondary-font);
+}
+
+.cta-form label {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.cta-form input {
+    width: 100%;
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+
+.cta-form-terms {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.cta-form-terms input {
+    width: auto;
+    padding: 0;
+}
+
+.cta-form-terms label {
+    padding: 0;
+    margin: 0 .5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cta-form-terms a {
+    text-decoration: underline;
+    color: var(--title-color-contrast);
+    cursor: pointer;
+}
+
+.cta-btn {
+    margin: 1.3rem 0;
+}
+
+/* === FOOTER === */
 
 footer {
     margin-top: 100px;
+    padding: 1rem 0;
     background-color: rgb(38, 70, 83);
 }
 
 footer p {
-    color: white;
+    color: var(--title-color-contrast);
+    font-family: var(--secondary-font);
     text-align: center;
-    padding: 30px;
     margin: 0;
+    padding: 0.3rem 0;
 }
 
 
@@ -356,5 +437,10 @@ footer p {
 
     .company-logo-title {
         font-size: 3rem;
+    }
+
+    .cta-form-terms a:hover {
+        text-decoration: underline;
+
     }
 }

@@ -95,7 +95,7 @@
               Lion's Den Gorge is a gorgeous nature preserve featuring a variety
               of unique nature scenes in Mequon, WI.
             </p>
-            <button type="button" class="hero-btn">More info</button>
+            <button type="button" class="btn hero-btn">More info</button>
           </article>
           <div class="hero-featured__img">
             <a href="#">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </section>
-
+      <!-- ==== QUOTES INFO ==== -->
       <section class="quotes-section">
         <img src="/img/opening-quotes.svg" alt="opening-quotes" />
         <p class="quote">
@@ -115,18 +115,22 @@
         </p>
       </section>
 
+      <!-- ==== PARKS INFO ==== -->
       <section id="parks-info" class="parks-info">
         <h2 class="parks-info-title">
           Visit our unique parks in Southern Wisconsin
         </h2>
         <ul class="parks-info-cards">
           <li class="parks-info-card">
-            <li class="parks-info-card">
-                <div class="card-img">
-                    <img src="https://www.travelwisconsin.com/uploads/places/91/91040c90-61f3-4834-a83d-b61bc86bc215-landscape-bluffs-and-lake-at-perrot-state-park-2.jpg" alt="">
-                </div>
-                <p class="card-info">Perrot State Park</p>
-              </li>
+            <div class="card-img">
+              <img
+                src="https://www.travelwisconsin.com/uploads/places/91/91040c90-61f3-4834-a83d-b61bc86bc215-landscape-bluffs-and-lake-at-perrot-state-park-2.jpg"
+                alt=""
+              />
+            </div>
+            <p class="card-info">Perrot State Park</p>
+          </li>
+          <li class="parks-info-card">
             <div class="card-img">
               <img
               src="https://treasuresofoz.org/media/djcatalog2/images/item/0/lion-s-den-gorge.1_f.jpg""
@@ -134,42 +138,87 @@
             </div>
             <p class="card-info">Lion's Den Gorge Nature Preserve</p>
           </li>
-
           <li class="parks-info-card">
             <div class="card-img">
-                <img src="https://www.wisdells.com/Files/Partner-Images/Attr-Partner-Images/DevilsLake_2.jpg" alt="">
+              <img
+                src="https://www.wisdells.com/Files/Partner-Images/Attr-Partner-Images/DevilsLake_2.jpg"
+                alt=""
+              />
             </div>
             <p class="card-info">Devil's Lake State Park</p>
           </li>
           <li class="parks-info-card">
             <div class="card-img">
-                <img src="/img/Scuppernong.png" alt="">
+              <img src="/img/Scuppernong.png" alt="" />
             </div>
             <p class="card-info">scuppernong Nature Trail</p>
           </li>
         </ul>
       </section>
 
+      <!-- ==== VIDEO SECTION ==== -->
       <section id="video-section" class="video-section">
         <h3 class="video-section-title">Our Beautiful State Parks</h3>
         <div class="video-frame">
-            <iframe src="https://www.youtube.com/embed/ndo1EA2rIVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe
+            id="video"
+            src="https://www.youtube.com/embed/ndo1EA2rIVw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
+        <p class="video-section-info">
+          The Wisconsin Department of Natural Resources State Park System
+          provides diverse recreational opportunities, outdoor learning and
+          protection of Wisconsin’s natural wonders.
+        </p>
       </section>
+
+      <!-- ==== CTA SECTION ==== -->
       <section id="cta-section" class="cta-section">
-        <article class="cta-info">
-          <h3>Call to action!</h3>
-          <p>Sign up for updates from our website</p>
-        </article>
-        <div class="cta-button-section">
-          <button class="cta-btn">Sign up</button>
-        </div>
+        <h3 class="cta-title">Want to know more?</h3>
+        <form class="cta-form">
+          <div class="cta-form-inputs">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="fullname"
+              placeholder="Your name"
+            />
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+          </div>
+          <div class="cta-form-terms">
+            <input type="checkbox" name="terms" id="terms" />
+            <label for="terms"
+              >Agreed with <a href="#">Terms and Conditions</a></label
+            >
+          </div>
+          <div class="cta-button-section">
+            <button type="button" class="btn cta-btn" name="submit">
+              Submit
+            </button>
+          </div>
+        </form>
       </section>
+
+      <!-- <section class="final-message">
+        <h2 class="final-message-title">Get lost in Wisconsin!</h2>
+      </section> -->
     </main>
 
     <!-- ==== FOOTER ==== -->
     <footer>
-      <p>some random text</p>
+      <p>&copy; 2022. All rights reserved.</p>
+      <p>Created by Lakeside Design.</p>
     </footer>
   </body>
 </html>
