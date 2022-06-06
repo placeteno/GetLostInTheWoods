@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Get Lost in the Woods</title>
+    <link rel="icon" type="image/x-icon" href="/img/main-logo.ico" />
     <meta
       name="description"
       content="The ultimate guide to the best trails, natural areas, and state parks around and in Milwaukee!"
@@ -15,7 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&family=Montserrat:wght@100;200;400;500;600;800&family=Roboto:wght@400;900&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="./css/mediaq.css" />
     <script src="/js/scripts.js" defer></script>
   </head>
   <body>
@@ -95,7 +98,13 @@
               Lion's Den Gorge is a gorgeous nature preserve featuring a variety
               of unique nature scenes in Mequon, WI.
             </p>
-            <button type="button" class="btn hero-btn">More info</button>
+            <button type="button" class="btn hero-btn">
+              <a
+                href="https://www.co.ozaukee.wi.us/662/Lions-Den-Gorge-Nature-Preserve"
+              >
+                More info</a
+              >
+            </button>
           </article>
           <div class="hero-featured__img">
             <a href="#">
@@ -161,19 +170,20 @@
         <h3 class="video-section-title">Our Beautiful State Parks</h3>
         <div class="video-frame">
           <iframe
-            id="video"
+            width="560"
+            height="315"
             src="https://www.youtube.com/embed/ndo1EA2rIVw"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
+          <p class="video-section-info">
+            The Wisconsin Department of Natural Resources State Park System
+            provides diverse recreational opportunities, outdoor learning and
+            protection of Wisconsin’s natural wonders.
+          </p>
         </div>
-        <p class="video-section-info">
-          The Wisconsin Department of Natural Resources State Park System
-          provides diverse recreational opportunities, outdoor learning and
-          protection of Wisconsin’s natural wonders.
-        </p>
       </section>
 
       <!-- ==== CTA SECTION ==== -->
@@ -209,10 +219,6 @@
           </div>
         </form>
       </section>
-
-      <!-- <section class="final-message">
-        <h2 class="final-message-title">Get lost in Wisconsin!</h2>
-      </section> -->
     </main>
 
     <!-- ==== FOOTER ==== -->

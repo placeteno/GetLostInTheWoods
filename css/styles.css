@@ -181,6 +181,11 @@ header {
     box-shadow: 1px 2px 10px rgba(55, 55, 55, 0.3);
 }
 
+.btn a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
 .hero-btn:hover {
     background-color: #f9aa6a
 }
@@ -279,7 +284,6 @@ header {
 /* === VIDEO SECTION === */
 
 .video-section {
-    /* height: 30rem; */
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
@@ -309,7 +313,6 @@ iframe {
     transform: translateX(-50%);
     width: 95%;
     height: 100%;
-
 }
 
 .video-section-info {
@@ -411,36 +414,4 @@ footer p {
     text-align: center;
     margin: 0;
     padding: 0.3rem 0;
-}
-
-
-@media (min-width: 40rem) {
-
-    .mobile-nav-container {
-        display: none;
-    }
-
-    .main-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .company-logo {
-        display: flex;
-    }
-
-    .company-logo img {
-        width: 10rem;
-        filter: invert(99%) sepia(46%) saturate(2482%) hue-rotate(313deg) brightness(95%) contrast(93%);
-    }
-
-    .company-logo-title {
-        font-size: 3rem;
-    }
-
-    .cta-form-terms a:hover {
-        text-decoration: underline;
-
-    }
 }
