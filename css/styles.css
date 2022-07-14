@@ -223,7 +223,7 @@ header {
 .quote::before {
     content: "";
     position: absolute;
-    background: url(/img/opening-quotes.svg);
+    background: url(../img/opening-quotes.svg);
     background-repeat: no-repeat;
     background-size: cover;
     top: 3rem;
