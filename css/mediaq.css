@@ -31,7 +31,7 @@
   }
 
   .toggle-button {
-    display: none;
+    display: block;
   }
 
   /* === NAV BAR === */
@@ -40,7 +40,7 @@
   }
 
   .desktop-nav {
-    display: block;
+    display: none;
   }
 
   .desktop-nav__items {
@@ -64,7 +64,7 @@
     margin: 4rem auto 0 auto;
     padding: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -86,7 +86,7 @@
   }
 
   .hero-featured__img {
-    width: 50rem;
+    width: 100%;
   }
 
   .hero-featured__img img {
@@ -103,6 +103,7 @@
   .quotes-section {
     background-color: #fff;
     height: 8rem;
+    padding: 0 2rem;
   }
 
   .quotes-section img {
@@ -121,6 +122,20 @@
     padding: 0 1.5rem;
     color: var(--font-color);
     z-index: 1;
+    position: relative;
+  }
+
+  .quote::before {
+    content: "";
+    position: absolute;
+    background: url(/img/opening-quotes.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -3rem;
+    left: -3rem;
+    height: 5rem;
+    width: 5rem;
+    opacity: 20%;
   }
 
   /* === PARKS INFO === */
@@ -211,15 +226,6 @@
     line-height: 2.3rem;
   }
 
-  /* .signup-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    background-color: #F4A261;
-    max-width: 1140px;
-  } */
-
   /* === CTA SECTION === */
   .cta-section {
     margin: 0;
@@ -305,6 +311,28 @@
     margin: 0;
     padding: 0.3rem 0;
   }
+}
 
+@media (min-width: 56rem) {
+  .toggle-button {
+    display: none;
+  }
 
+  .desktop-nav {
+    display: block;
+  }
+
+  .hero-container {
+    max-width: 1600px;
+    margin: 4rem auto 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-featured__img {
+    width: 50rem;
+  }
 }
